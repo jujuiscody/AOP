@@ -1,0 +1,31 @@
+
+<div>
+  <ol *ngFor = "let c of courseList">
+    courses to register:{{c.title+ c.id+ c.status+c.active}}
+  </ol>
+</div>
+<ol>
+  <div *appDelay="3000;Factor:2">whats up</div>
+<ng-template ngFor let-course [ngForOf]="courseList">
+  <li *ngIf="course.active">
+    subscribe to: {{course.title}}  {{course.id}}  {{course.status}}
+  </li>
+</ng-template>
+</ol>
+<div *ngIf="courseList[1].active">
+course is: {{courseList[1].title}}
+</div>
+<div>
+  <ng-template ngIf="courseList[1].active">
+    {{courseList[1].title}}  
+  </ng-template>
+</div>
+
+<ng-template ngFor let-co [ngForOf]="courseList">
+  <li appAttribute [basicColor]="'blue'">testing using ng tem: {{co.title}}</li>
+</ng-template>
+<div appAttribute *ngIf="fun.address.active">
+  {{fun.name}}
+</div>
+
+

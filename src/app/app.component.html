@@ -1,0 +1,25 @@
+<!--<div>
+  <ol>
+    <li *ngFor="let c of course; let i=index; let a=odd">
+      {{"name of course: "+c.title+" and its code is "+ c.id+ " and is: "+c.status}} - {{i}} - {{a}}</li>
+  </ol>
+</div>
+
+<div>
+  <ng-template ngFor let-c [ngForOf]="course">
+    {{c.title}}
+  </ng-template>
+</div>
+
+<div *ngIf="van.value">
+  course available from:{{date}}
+</div>
+<ng-template ngIf="van.value">
+  <div>
+    subject is:{{course.title}}
+  </div>
+</ng-template>
+<app-directive></app-directive> -->
+
+<app-list></app-list>
+<app-dashboard></app-dashboard>
